@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dementia IQ Test</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    body {
+      background-image: url('images/imgonline-com-ua-resize-vEoIHwXsPJica.jpg');
+    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.background-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  padding: 20px;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1, h2 {
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #139fe0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .background-image {
+    padding: 10px;
+  }
+}
+.rules ul {
+    list-style: none;
+    font-size: 20px;
+}
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000000;
+    text-decoration: none;
+  }
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="background-image">
+    <div class="content">
+      <a href="HOMEPAGE_1.html" class="back-button"> &#8249; Back</a>
+      <h1>Welcome to the Dementia IQ Test</h1>
+      <p>
+        <span style="background:#139fe0;color: #fff;">Unlock Your Potential with IQ Testing
+        </span><br> <br> Are you curious about your intelligence quotient (IQ) and eager to explore your cognitive abilities? we provide comprehensive IQ testing services designed to help you understand your intellectual strengths and areas for development.
+      </p>
+      <p>
+      <h1>What is an IQ Test?</h1>
+      An IQ test is a standardized assessment tool used to measure a person's cognitive abilities and problem-solving skills. It evaluates various aspects of intelligence, including logical reasoning, verbal comprehension, spatial awareness, and mathematical ability. IQ tests are widely recognized as valuable tools for assessing intellectual potential and guiding personal and professional development.</p>
+      <p style="font-size: 20px; background:#139fe0;color: #fff;">This IQ test will help evaluate your cognitive abilities.</p>
+      <h2>Rules and Regulations:</h2>
+      <div class="rules">
+        <ul>
+            <li>Answer all questions truthfully and to the best of your ability.</li>
+            <li>Do not use external resources or assistance while taking the test.</li>
+            <li>Once you start the test, complete it within the given time.</li>
+          </ul>
+      </div>
+      <button id="startButton">Start Test</button>
+    </div>
+  </div>
+</div>
+
+<script>
+    // script.js
+document.getElementById('startButton').addEventListener('click', function() {
+  window.location.href = "iqtest.html";
+});
+
+</script>
+</body>
+</html>

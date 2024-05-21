@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tool Selection</title>
+<link rel="stylesheet" href="new_style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="check.css">
+<style>
+    /* body{
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        margin-top: 400PX;
+    } */
+    form {
+        width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+    }
+    button[type="checkbox"],
+    button[type="radio"] 
+    {
+        margin-right: 10px;
+    }
+    
+    button[type="submit"] 
+    {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .tool{
+        padding: 16px;
+        margin: 16px;
+        font-size: 20px;
+        display: inline;
+
+    }
+    /* .research{
+        padding: 16px;
+        margin: 16px;
+        position: relative;
+        top: -600px;
+        left: 40%;
+        color: #0056b3;
+    } */
+    .check{
+        margin-top: 200px;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        form {
+            padding: 10px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"><a href="LOGO PAGE.html">Dementia</a></h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="HOMEPAGE_1.html">Home</a></li>
+                    <!-- <li><a href="ASDPAGE_2.html">ASD</a></li> -->
+                    <li><a href="ABOUT_DEMENTIAPAGE_3.HTML">About Dementia</a></li>
+                    <li><a href="GENEPAGE_4.html">Genes</a></li>
+                    <li><a href="SNP TOOLS.html">Analysis</a></li>
+                    <li><a href="#">Reference</a></li>
+                </ul>
+            </div>
+        </div>     
+        <div class="check">
+            <form action="#" method="post">
+                
+                <h1>Select Tools:</h1>
+                <div class="tool">
+                    <input type="checkbox" id="tool1" name="tool1" value="Tool 1">
+                    <label for="tool1">PredictSNP
+                    </label><br><br>
+                    
+                    <input type="checkbox" id="tool2" name="tool2" value="Tool 2">
+                    <label for="tool2">MAPP
+                    </label><br><br>
+                    
+                    <input type="checkbox" id="tool3" name="tool3" value="Tool 3">
+                    <label for="tool3">PhD-SNP
+                    </label><br><br>
+                    
+                    <input type="checkbox" id="tool4" name="tool4" value="Tool 4">
+                    <label for="tool4">Polyphen-1
+                    </label><br><br>
+                    
+                    <input type="checkbox" id="tool5" name="tool5" value="Tool 5">
+                    <label for="tool5">Polyphen-2
+                    </label><br><br>
+                    
+                    <input type="checkbox" id="tool6" name="tool6" value="Tool 6">
+                    <label for="tool6">SIFT
+                    </label><br><br>
+                    
+                    <input type="checkbox" id="tool7" name="tool7" value="Tool 7">
+                    <label for="tool7">SNAP
+                    </label><br><br>
+                    
+                    <input type="checkbox" id="tool8" name="tool8" value="Tool 8">
+                    <label for="tool8">PANTHER
+                    </label><br><br>
+    
+                    <input type="checkbox" id="all" onclick="total()" name="all" value="all">
+                    <label for="tool8">All</label><br><br><br>
+                </div>
+                <button type="submit" value="Submit" onclick="total()"></button>
+            </form> 
+        </div>
+    </div> 
+    <script>
+        function total(){
+            let A=document.getElementById("tool1").checked
+            let B=document.getElementById("tool2").checked
+            let C=document.getElementById("tool3").checked
+            let D=document.getElementById("tool4").checked
+            let E=document.getElementById("tool5").checked
+            let F=document.getElementById("tool6").checked
+            let G=document.getElementById("tool7").checked
+            let H=document.getElementById("tool8").checked
+            let I=document.getElementById("all").checked
+            if(I){
+                I=A+B+C+D+E+F+G+H+I
+            }
+            else{
+                I=I
+            }
+            I.innerHTML=I
+        }
+    </script>
+</body>
+</html>

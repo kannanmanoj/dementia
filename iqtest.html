@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dementia Disease IQ Test</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Reset default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #139fe0;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    /* Main styles */
+    main {
+      padding: 20px;
+    }
+
+    .question-container {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .question-container h2 {
+      margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      margin-bottom: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #139fe0;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1591ca;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #139fe0;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    /* Styles for form elements */
+    input[type="radio"] {
+      margin-bottom: 10px;
+    }
+    #result {
+      font-size: 24px; /* Adjust the font size as needed */
+      font-weight: bold; /* Optionally, you can make the result bold */
+      margin-top: 20px; 
+    }
+    .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    text-decoration: none;
+    background:#139fe0
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="iqpage.html" class="back-button"> &#8249; Back</a>
+    <h1>Dementia Disease IQ Test</h1>
+  </header>
+
+  <main>
+    <form id="quiz-form">
+      <!-- Add your IQ test questions here -->
+      <div class="question-container">
+        <h2>Question 1:</h2>
+        <p>What is the capital of France?</p>
+        <input type="radio" name="question1" value="Paris"> Paris<br>
+        <input type="radio" name="question1" value="London"> London<br>
+        <input type="radio" name="question1" value="Berlin"> Berlin<br>
+        <input type="radio" name="question1" value="Rome"> Rome<br>
+      </div>
+      <div class="question-container">
+        <h2>Question 2:</h2>
+        <p>Which planet is known as the Red Planet?</p>
+        <input type="radio" name="question2" value="Venus"> Venus<br>
+        <input type="radio" name="question2" value="Mars"> Mars<br>
+        <input type="radio" name="question2" value="Jupiter"> Jupiter<br>
+        <input type="radio" name="question2" value="Saturn"> Saturn<br>
+      </div>
+      <div class="question-container">
+        <h2>Question 3:</h2>
+        <p>Who wrote "To Kill a Mockingbird"?</p>
+        <input type="radio" name="question3" value="Harper Lee"> Harper Lee<br>
+        <input type="radio" name="question3" value="Mark Twain"> Mark Twain<br>
+        <input type="radio" name="question3" value="Ernest Hemingway"> Ernest Hemingway<br>
+        <input type="radio" name="question3" value="F. Scott Fitzgerald"> F. Scott Fitzgerald<br>
+      </div>
+      <div class="question-container">
+        <h2>Question 4:</h2>
+        <p>What is the chemical symbol for water?</p>
+        <input type="radio" name="question4" value="HO"> HO<br>
+        <input type="radio" name="question4" value="H2O"> H2O<br>
+        <input type="radio" name="question4" value="CO2"> CO2<br>
+        <input type="radio" name="question4" value="H2SO4"> H2SO4<br>
+      </div>
+      <div class="question-container">
+        <h2>Question 5:</h2>
+        <p>What is the tallest mammal on Earth?</p>
+        <input type="radio" name="question5" value="Hippopotamus"> Hippopotamus<br>
+        <input type="radio" name="question5" value="Giraffe"> Giraffe<br>
+        <input type="radio" name="question5" value="Elephant"> Elephant<br>
+        <input type="radio" name="question5" value="Rhinoceros"> Rhinoceros<br>
+      </div>
+      <div class="question-container">
+        <h2>Question 6:</h2>
+        <p>Which planet is the closest to the Sun?</p>
+        <input type="radio" name="question6" value="Venus"> Venus<br>
+        <input type="radio" name="question6" value="Earth"> Earth<br>
+        <input type="radio" name="question6" value="Mercury"> Mercury<br>
+        <input type="radio" name="question6" value="Mars"> Mars<br>
+      </div>
+      <div class="question-container">
+        <h2>Question 7:</h2>
+        <p>Who painted the Mona Lisa?</p>
+        <input type="radio" name="question7" value="Vincent van Gogh"> Vincent van Gogh<br>
+        <input type="radio" name="question7" value="Leonardo da Vinci"> Leonardo da Vinci<br>
+        <input type="radio" name="question7" value="Pablo Picasso"> Pablo Picasso<br>
+        <input type="radio" name="question7" value="Michelangelo"> Michelangelo<br>
+      </div>
+      <div class="question-container">
+        <h2>Question 8:</h2>
+        <p>What is the chemical symbol for gold?</p>
+        <input type="radio" name="question8" value="Au"> Au<br>
+        <input type="radio" name="question8" value="Ag"> Ag<br>
+        <input type="radio" name="question8" value="Fe"> Fe<br>
+        <input type="radio" name="question8" value="Cu"> Cu<br>
+      </div>
+      <div class="question-container">
+        <h2>Question 9:</h2>
+        <p>What is the boiling point of water in degrees Celsius?</p>
+        <input type="radio" name="question9" value="100°C"> 100°C<br>
+        <input type="radio" name="question9" value="0°C"> 0°C<br>
+        <input type="radio" name="question9" value="-273°C"> -273°C<br>
+        <input type="radio" name="question9" value="212°C"> 212°C<br>
+      </div>
+      <div class="question-container">
+        <h2>Question 10:</h2>
+        <p>Who is credited with inventing the telephone?</p>
+        <input type="radio" name="question10" value="Alexander Graham Bell"> Alexander Graham Bell<br>
+        <input type="radio" name="question10" value="Thomas Edison"> Thomas Edison<br>
+        <input type="radio" name="question10" value="Nikola Tesla"> Nikola Tesla<br>
+        <input type="radio" name="question10" value="Guglielmo Marconi"> Guglielmo Marconi<br>
+      </div>
+      <!-- Add more questions as needed -->
+
+      <button type="button" onclick="calculateIQ()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+  </main>
+
+  <script>
+    function calculateIQ() {
+      var correctAnswers = 0;
+      var totalQuestions = 10; // Assuming 10 questions in the test
+
+      // Array to store correct answers for each question
+      var correctChoices = ["Paris", "Mars", "Harper Lee", "H2O", "Giraffe", "Mercury", "Leonardo da Vinci", "Au", "100°C", "Alexander Graham Bell"];
+
+      // Loop through each question to check the selected answer
+      for (var i = 1; i <= totalQuestions; i++) {
+        var selectedAnswer = document.querySelector('input[name="question' + i + '"]:checked');
+
+        // Check if an answer is selected for each question
+        if (selectedAnswer) {
+          // Check if the selected answer is correct
+          if (selectedAnswer.value === correctChoices[i - 1]) {
+            correctAnswers++;
+          }
+        } else {
+          alert("Please answer all questions before submitting.");
+          return; // Exit function if any question is unanswered
+        }
+      }
+
+      // Calculate IQ level based on the number of correct answers
+      var iqLevel = "";
+      if (correctAnswers >= 8) {
+        iqLevel = "Genius ";
+      } else if (correctAnswers >= 5) {
+        iqLevel = "Above Average";
+      } else if (correctAnswers >= 3) {
+        iqLevel = "Average";
+      } else {
+        iqLevel = "Below Average";
+      }
+
+      // Display the result
+      var resultContainer = document.getElementById("result");
+      resultContainer.innerHTML = "Your IQ level is: " + iqLevel;
+    }
+  </script>
+</body>
+</html>
